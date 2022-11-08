@@ -1,0 +1,67 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-size: 220px;
+}
+
+section {
+    width: 100%;
+    height: 100%;
+}
+
+div {
+    height: 100%;
+    width: 50%;
+    overflow: hidden;
+    line-height: 300px;
+    white-space: nowrap;
+}
+
+div * {
+    display: inline-block;
+}
+
+.vermelho {
+    background-color: red;
+    color: yellow;
+    float: left;
+}
+
+.vermelho span {
+    transform: translate(0);
+    animation: animation-vermelho 8s linear infinite;
+}
+
+.amarelo {
+    background-color: yellow;
+    color: red;
+    float: right;
+}
+
+.amarelo span {
+    transform: translate(-684px);
+    animation: animation-amarelo 8s linear infinite;
+}
+
+@keyframes animation-amarelo {
+    0%, 100% {
+        transform: translate(-684px);
+    }
+    
+    100% {
+        transform: translate(-3088px);
+    }
+}
+
+@keyframes animation-vermelho {
+    0%, 100% {
+        transform: translate(0);
+    }
+
+    100% {
+        transform: translate(-2404px);
+    }
+}
+
+

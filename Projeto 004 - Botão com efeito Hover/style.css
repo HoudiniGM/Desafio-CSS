@@ -1,0 +1,90 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+    color: #fab8f0;
+    font-size: 20px;
+    font-weight: 600;
+    text-transform: uppercase;
+}
+
+body {
+    background-color: rgb(41, 44, 53);
+}
+
+.centralizar {
+    width: 250px;
+    height: 60px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border: 5px solid #fab8f0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+span {
+    display: block;
+    width: 20px;
+    height: 10px;
+    background-color: rgb(41, 44, 53);
+    transform: skew(40deg);
+    position: absolute;
+    transition: all 1s;
+}
+
+span:nth-child(1) {
+    top: -7px;
+    left: 20px;
+}
+
+span:nth-child(2) {
+    bottom: -7px;
+    right: 20px;
+}
+
+.centralizar:hover > span:nth-child(1) {
+    transform: translate(180px) skew(40deg);
+    
+}
+
+.centralizar:hover > span:nth-child(2) {
+    transform: translate(-180px) skew(40deg);
+}
+
+
+
+  /* #### DESCOMENTE PARA UM HOVER INFINITO #### */
+
+
+
+
+/* .centralizar:hover > span:nth-child(1) {
+    animation: animation-span1 1.5s ease-in-out infinite;
+}
+
+.centralizar:hover > span:nth-child(2) {
+    animation: animation-span2 1.5s ease-in-out infinite;;
+}
+
+
+@keyframes animation-span1 {
+    0%, 100% {
+        transform: translate(0) skew(40deg);
+    }
+    50% {
+        transform: translate(180px) skew(40deg);
+    }
+}
+
+@keyframes animation-span2 {
+    0%, 100% {
+        transform: translate(0) skew(40deg);
+    }
+    50% {
+        transform: translate(-180px) skew(40deg);
+    }
+} */
